@@ -1,0 +1,46 @@
+=== Início do teste CRUD - Fri Aug  7 12:53:06 AM UTC 2026 ===
+--- 1) Cadastrando veículo 1 ---
+{
+  "id": 3,
+  "placa": "KLL-9090",
+  "montadora": "Volvo",
+  "modelo": "FH 540",
+  "status": "DISPONIVEL"
+}
+ID do veículo 1: 3
+
+--- 2) Cadastrando veículo 2 ---
+{
+  "id": 4,
+  "placa": "XYZ-1234",
+  "montadora": "Scania",
+  "modelo": "R450",
+  "status": "DISPONIVEL"
+}
+ID do veículo 2: 4
+
+--- 3) Atualizando status do veículo 3 para 'EM_ROTA' ---
+{
+  "mensagem": "Status atualizado com sucesso!",
+  "veiculo": {
+    "id": 3,
+    "placa": "VWX-5555",
+    "montadora": "Volkswagen",
+    "modelo": "Delivery",
+    "status": "EM_ROTA"
+  }
+}
+
+--- 4) Deletando veículo 4 ---
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 49
+ETag: W/"31-qNvbusEzll80eN5vHaRO13cTRmo"
+Date: Fri, 07 Aug 2026 00:53:06 GMT
+Connection: keep-alive
+Keep-Alive: timeout=5
+
+{"mensagem":"Veiculo ID 4 removido com sucesso."}
+
+=== Fim do teste CRUD - Fri Aug  7 12:53:06 AM UTC 2026 ===
