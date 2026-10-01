@@ -1,3 +1,5 @@
 node_modules/
 .env
 processos.log
+node_modules/
+.env
